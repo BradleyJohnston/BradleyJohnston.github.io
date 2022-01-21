@@ -1,4 +1,23 @@
-$url = "http://reddit.com/r/mechanicalkeyboards"
-$page = file_get_contents($url)
-$outfile = "xtracomponents.html"
-file_put_contents($outfile, $page)
+<?php
+    $url = "http://reddit.com/r/mechanicalkeyboards"
+    $page = file_get_contents($url)
+    $outfile = "xtracomponents.html"
+    file_put_contents($outfile, $page)
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Subreddit Integration</title>
+    </head>
+    <head>
+        <h1>
+            Choose a subreddit
+        </h1>
+
+        <form action="" method="POST">
+            <input type="text" value="r/jokes" name="subreddit_name" />
+            <input type="submit" value="post" />
+        </form>>
+    </head>
+</html>
