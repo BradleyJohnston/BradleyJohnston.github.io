@@ -1,1 +1,4 @@
-Hello World
+$url = "http://reddit.com/r/mechanicalkeyboards"
+$page = file_get_contents($url)
+$outfile = "xtracomponents.html"
+file_put_contents($outfile, $page)
